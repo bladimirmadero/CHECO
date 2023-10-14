@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CHECO</title>
+</head>
+
+<style>
+    .nav-link{
+        color: black;
+        font-size: 120%;
+    }
+    .nav-link:hover { /* Al pasar el mouse hará lo siguiente */
+        -webkit-text-fill-color: white; /* Cambia de color */
+        background-color: orange;
+        /* font-size: 1.2em; Cambia el tamaño de fuente */
+      }
+    .navbar-brand{
+        color: black;
+
+    }
+    h1, h3, p{
+        color: white;
+    }
+</style>
+
+<body  style="background-color:#222222;">
+      
+     <!-- Barra de navegación -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        
+        <div class="container-fluid justify-content-around">
+
+            <a class="navbar-brand" href="#"> 
+                <img src="LOGO_MARLET.png" width="100" height="65"/>
+            </a>
+            
+            <!-- Botón para dispositivos pequeños (como móviles) -->
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido de la barra de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Personalizar Auto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Consultar refacciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aprende conceptos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comprar autos</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Sobre Nosotros </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"> Contacto </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO DE LA PÁGINA -->
+
+    <div class="container py-5">
+        <h1 class="text-center">Contacto</h1>
+
+        <p class="display-1 py-1" style="font-size: 140%">
+            <b>Correo:</b> contacto@checo.com
+        </p>
+        <p class="display-1 py-1" style="font-size: 140%">
+            <b>Telefono:</b> (646) 111 22 33
+        </p>
+        <p class="display-1 py-1" style="font-size: 140%">
+            <b>Dirección:</b> Av Cuatemoc y calle 42
+        </p>
+        
+        <h3 class="text-center">Genera una cita</h3>
+        <form class="d-flex" role="search" style="width: 30%;">
+            <input class="form-control me-2" type="search" placeholder="Correo" aria-label="Buscar">
+            <input class="form-control me-2" type="search" placeholder="Asunto" aria-label="Buscar">
+            <button class="btn btn-outline-warning" type="submit">Enviar</button>
+        </form>
+
+    
+    <!-- Incluye los archivos JavaScript de Bootstrap (jQuery es requerido) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comenzando...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            opacity: 0;
+            animation: fade-in 2s forwards, show-image 2s 2s forwards, fade-out 2s 6s forwards, delay-and-redirect 3s 8s forwards;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes show-image {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-out {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes delay-and-redirect {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0;
+            }
+            100% {
+                animation-timing-function: steps(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio id="sound" src="assets/sounds/arranque.mp3"></audio>
+    <img src="assets/img/presentacion/imagen.png" alt="Imagen" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <script>
+        
+        const playSound = function() {
+            let element = document.createElement('div');
+            element.setAttribute('style', 'display: none');
+            element.innerHTML = `
+              <audio autoplay loop>
+                <source src="assets/sounds/arranque.mp3" type="audio/mpeg">
+              </audio>
+            `;
+            document.body.appendChild(element);
+            document.removeEventListener('click', playSound);
+        }
+        
+        document.addEventListener('click', playSound);
+
+        setTimeout(function () {
+            sound.pause(); // Pausa el sonido
+            window.location.href = "main.html";
+        }, 8000); // Redirecciona después de 1 segundos
+    </script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo CHECO-blanco.png">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!--Bootstrap (y otros)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <title>CHECO</title>
+</head>
+
+<style>
+    .nav-link{
+        font-size: 120%;
+        font-family: 'Orbitron', sans-serif;
+    }
+    .nav-link:hover { /* Al pasar el mouse hará lo siguiente */
+        background-color: rgb(174, 84, 35);
+        /* font-size: 1.2em; Cambia el tamaño de fuente */
+        font-family: 'Orbitron', sans-serif;
+      }
+    .navbar-brand{
+        color: black;
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background: none repeat scroll 0 0 #000000;
+      }
+    
+      .spinner {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        position: relative;
+      }
+    
+      .spinner:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 45px;
+        height: 45px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 1px solid #575757;
+        border-top-color: #ffffff;
+        animation: spinner .9s linear infinite;
+      }
+
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+    
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+
+</style>
+
+<body class="bg-light">
+      
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+
+             <span class="spinner-rotate"></span>
+             
+        </div>
+   </section>
+
+     <!-- Barra de navegación -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        
+        <!--justify-content-center-->
+        <div class="container-fluid justify-content-around">
+
+            <a class="navbar-brand" style="margin-left:20px" href="#"> 
+                <img src="assets/img/Logo CHECO-blanco.png" width="200" height="200"/>
+            </a>
+            
+            <!-- Botón para dispositivos pequeños (como móviles) -->
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Barra de navegación -->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbarNav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: aliceblue;" href="main.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: aliceblue;" href="personalizar_auto.html">Personalizar Auto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Consultar refacciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Aprende conceptos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Comprar autos</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav d-flex ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html"> Sobre Nosotros </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: aliceblue;" href="about.html"> Contacto </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de la barra de navegación -->
+
+                    <!-- CONTENIDO DE LA PÁGINA -->
+
+    <!-- Start Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/presentacion/refacciones.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1"><b>CHECO</b> custom</h1>
+                                <h3 class="h2">Personaliza tu auto sin miedo</h3>
+                                <p>
+                                    ¿No sabes por dónde empezar? Nosotros nos encargamos, no necesitas ser un experto para transformar tu auto.
+                                    En esta sección podrás transformar poco a poco tu auto acorde tus necesidades
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/presentacion/jeep-normal.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Proident occaecat</h1>
+                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                                <p>
+                                    You are permitted to use this Zay CSS template for your commercial websites. 
+                                    You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/presentacion/jeep-offroad.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Repr in voluptate</h1>
+                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <p>
+                                    We bring you 100% free CSS templates for your websites. 
+                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- End Banner Hero -->
+
+
+
+    <div class="container py-5">
+        <h1 class="text-center">Busca tu auto</h1>
+
+        <section id="home" data-stellar-background-ratio="0.5">
+            <div class=""></div>
+            <div class="container">
+                 <div class="row">
+                      <div class="col-md-offset-3 col-md-6 col-sm-12">
+                           <div class="home-info">
+                                <h3>professional landing page</h3>
+                                <h1>We help you manage your website successfully!</h1>
+                                <form action="" method="get" class="online-form">
+                                     <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                                     <button type="submit" class="form-control">Get started</button>
+                                </form>
+                           </div>
+                      </div>
+  
+                 </div>
+            </div>
+       </section>
+
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Busca tu auto aquí" aria-label="Buscar">
+            <button class="btn btn-outline-warning" type="submit">Buscar</button>
+          </form>
+
+        <h1 class="text-center">Autos destacados</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+            <!--Auto: MUSTANG-->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="autos/ford-mustang-gen3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Ford Mustang 1984</h5>
+                        <p class="card-text">El mustang de tercera generación es un clásico, fue uno de los mejores autos deportivos de toda la historia, lamentablemente la generación más infravalorada.</p>
+                    </div>
+
+                    <!--Barra de eficiencia-->
+                    <div class="container mb-3">
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Stock</div>
+                            <div class="progress-bar bg-warning"  role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">+ 20%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-around mb-5">
+                        <button class="btn btn-warning">Personalizar</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Auto: RANGER-->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="autos/ford-ranger-gen2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Ford Ranger 1996</h5>
+                        <p class="card-text">El Ranger es un pickup compacto confiable y versátil. Con un motor resistente y capacidad de carga, es un compañero ideal para el trabajo o la diversión. Un fiel compañero</p>
+                    </div>
+
+                    <!--Barra de eficiencia-->
+                    <div class="container mb-3">
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Stock</div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 38%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >+ 38%</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-around mb-5">
+                        <button class="btn btn-warning">Personalizar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Auto: Frontier 1998-->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="autos/nissan-frontier-98.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Frontier 1998</h5>
+                        <p class="card-text">El Frontier de 1998 es un pickup compacto que se destacó por su robustez y versatilidad. Se ganó una sólida reputación por ser una opción confiable tanto para el trabajo como para el uso diario.</p>
+                    </div>
+
+                    <!--Barra de eficiencia-->
+                    <div class="container mb-3">
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Stock</div>
+                            <div class="progress-bar bg-danger"  role="progressbar" style="width: 23%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">+ 23%</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-around mb-5">
+                        <button class="btn btn-warning">Personalizar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Auto: Sentra-->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="autos/nissan-sentra-05.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Sentra 2005</h5>
+                        <p class="card-text">El Nissan Sentra 2005 fue un sedán compacto conocido por su eficiencia en el consumo de combustible, comodidad y fiabilidad en el manejo diario. Aun que no parezca, es candidato a Off-Road</p>
+                    </div>
+
+                    <!--Barra de eficiencia-->
+                    <div class="container mb-3">
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Stock</div>
+                            <div class="progress-bar bg-warning"  role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">+ 30%</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-around mb-5">
+                        <button class="btn btn-warning">Personalizar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Auto: MUSTANG 2000-->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="autos/ford-mustang-gen4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Mustang 2000</h5>
+                        <p class="card-text">El Mustang del 2000 es un vehículo que encarnaba la esencia de los muscle cars americanos, con su diseño llamativo. Con su potencia y un sistema Off-Road sería imparable.</p>
+                    </div>
+
+                    <!--Barra de eficiencia-->
+                    <div class="container mb-3">
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Stock</div>
+                            <div class="progress-bar bg-danger"  role="progressbar" style="width: 48%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">+ 48%</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-around mb-5">
+                        <button class="btn btn-warning">Personalizar</button>
+                    </div>
+                </div>
+            </div>
+
+    
+    <!-- Los Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <!-- Fin de los Scripts -->
+
+    <!-- SCRIPTS -->
+    
+
+
+</body>
+
+</html>
