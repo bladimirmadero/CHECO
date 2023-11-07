@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Logo CHECO-blanco.png">
 
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" media="all" href="assets/css/button.css">
     <link rel="stylesheet" href="assets/css/inicio-sesion.css">
 
     <!-- Load fonts style after rendering the layout styles -->
@@ -21,26 +26,45 @@
 </head>
 
 <style>
-    .nav-link{
-        color: black;
-        font-size: 120%;
+    h1,h2,h3,h4,h5 {
+        text-align: center;
     }
-    .nav-link:hover { /* Al pasar el mouse hará lo siguiente */
-        -webkit-text-fill-color: white; /* Cambia de color */
-        background-color: orange;
-        /* font-size: 1.2em; Cambia el tamaño de fuente */
-      }
-    .navbar-brand{
-        color: black;
 
-    }
-    h1, h3, p{
+    .inputs {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        background: #2E363C;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 2px solid goldenrod;
+        font-size: 18px;
         color: white;
+    }
+
+    .new-inputs{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    label{
+        font-size: 120% !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn-light{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 120%;
+        width: 60%;
+        border: none;
+    }
+    .btn-light:hover{
+        background-color: goldenrod;
     }
 </style>
 
-<body  style="background-color:#2E363C;">
-      
+<body style="background-color: #2E363C;">
+
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
@@ -135,7 +159,6 @@
                         <nav class="navx"><!--Sesión-->
                             <ul class="ulx">
                                 <a style="text-decoration: none;" href="sesion.html">
-                                    
                                     <li class="lix" style="user-select: none;">
                                         Sesión
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -156,65 +179,66 @@
             </div>
         </div>
     </nav>
+    
 
-    <!-- CONTENIDO DE LA PÁGINA -->
+                    <!-- CONTENIDO DE LA PÁGINA -->
 
+    <!-- CREAR CUENTA -->
     <div class="container py-5">
-
-        <div class="container">
-            <h1>Misión</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                Nuestra <b>misión</b> es proporcionar a los entusiastas del todo terreno
-                una plataforma especializada donde puedan acceder a refacciones de alto rendimiento
-                para mejorar y personalizar sus vehículos. Nos comprometemos a ofrecer una amplia
-                gama de opciones, información detallada y un servicio excepcional para que puedas
-                llevar tu experiencia off-road al siguiente nivel de emoción y rendimiento
-
-            </p>
-        </div>
-
-        <div class="container">
-            <h1>Visión</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                Nuestra <b>visión</b> es convertirnos en el destino
-                de referencia para todos los amantes del off-road en
-                busca de refacciones de alto rendimiento. Queremos ser
-                reconocidos como líderes en la industria, brindando una 
-                experiencia de compra incomparable y apoyando a nuestra
-                comunidad con conocimientos especializados y soluciones personalizadas.
-                Aspiramos a ser el motor que impulsa el espíritu aventurero de nuestros
-                clientes y contribuye al crecimiento constante de la comunidad off-road
-                en todo el mundo.
-
-            </p>
-        </div>
-        <br><br>
-        <div class="container">
-            <h1 class="text-center">Contacto</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Correo:</b> contacto@checo.com
-            </p>
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Telefono:</b> (646) 111 22 33
-            </p>
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Dirección:</b> Av Cuatemoc y calle 42
-            </p>
-            
-            <!--<h3 class="text-center">Genera una cita</h3>
-            <form class="d-flex" role="search" style="width: 30%;">
-                <input class="form-control me-2" type="search" placeholder="Correo" aria-label="Buscar">
-                <input class="form-control me-2" type="search" placeholder="Asunto" aria-label="Buscar">
-                <button class="btn btn-outline-warning" type="submit">Enviar</button>
-            </form>-->
-        </div>
         
+            <form class="form-register bg-dark">
+                <div class="container">
+                    <h1>Términos y condiciones</h1>
+                    <form>
+                        <textarea id="w3review" name="w3review" rows="20" cols="70" disabled>
+CHECO:
+CHECO es un sitio web que ofrece servicios vinculados principalmente a la personalización y comparación del rendimiento del vehículo off-road.
 
-    
-    
+Términos y Condiciones:
+Las Personas Usuarias aceptan estos Términos y Condiciones desde el momento en que se registran en el Sitio y/o lo usan.
+
+Responsabilidad del usuario:
+• No nos hacemos responsables por la falla mecánica del vehículo, este sistema web es un simulador informativo y recreativo, puede ser susceptible a fallos de cálculos y estadísticas. Consulte a un mecánico profesional.
+• Cualquier fallo o defecto por las refacciones en el vehículo físico, CHECO no se hace responsable, cualquier inconveniente con la refacción pasa a ser responsabilidad del fabricante de las piezas.
+• CHECO no se hace responsable por incompatibilidad de piezas debido a diferencias en modelos y constante innovación en la fabricación de las refacciones.
+• El usuario se hace responsable por los cambios que desee hacer a su vehículo.
+• No se hacen devoluciones en el sistema de donaciones.
+
+Sanciones:
+En caso que la Persona Usuaria incumpliera una ley o los Términos y Condiciones, podremos advertir, suspender, restringir o inhabilitar temporal o definitivamente su cuenta, sin perjuicio de otras sanciones que se establezcan en las reglas de uso particulares de los servicios de CHECO.
+
+Registro y cuenta:
+• Las cuentas son personales y se accede a ellas con una clave confidencial.
+• Quien desee guardar su registro de proyecto, deberá completar el formulario de registro con los datos que le sean requeridos; al completarlo, se compromete a hacerlo de manera  exacta, precisa y verdadera y a mantener sus datos siempre actualizados. La Persona Usuaria será la única responsable de la certeza de sus datos de registro.
+
+Seguridad:
+• La organización no se hace responsable por accidentes que presente el usuario en su vehículo.
+• La organización no se hace responsable de la cuenta del usuario en caso de ser víctima de phishing, fishing, o cualquier otro ciberdelito.
+
+Jurisdicción y Ley Aplicable:
+Estos Términos y Condiciones se rigen por la ley local. Toda controversia derivada de su aplicación, interpretación, ejecución o validez será resuelta por los tribunales nacionales ordinarios competentes, con asiento en la capital, salvo disposición específica de normas de orden público, como por ejemplo, legislación relativa al Consumidor. Para todos los efectos relacionados con estos Términos y Condiciones y con el uso del sitio, CHECO, establece como domicilio Blvd. Zertuche y Blvd. de los Lagos s/n. Fraccionamiento Valle Dorado C.P. 22890. Ensenada, Baja California, México.
+
+Propiedad intelectual:
+• No se tolerará la duplicación, falsificación o inclumplimiento con los derechos reservados a la propiedad intelectual e industrial, es decir, nuestro nombre, logo y código fuente de nuestro sitio. Será resuelto en la Fiscalía General de la República o Unidad Especializada en Investigación de Delitos contra los Derechos de Autor y la Propiedad Industrial.
+• Cualquier información brindada en CHECO, es propiedad de la organización misma y no puede ser duplicada y publicada en otros medios.
+• En caso que una Persona Usuaria o cualquier publicación infrinja la Propiedad Intelectual de CHECO o de terceros, CHECO podrá remover dicha publicación total o parcialmente, sancionar al usuario conforme a lo previsto en estos Términos y Condiciones y ejercer las acciones extrajudiciales y/o judiciales correspondientes.
+</textarea>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" name="acepto">
+                            <label for="acepto"> Acepto</label>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <button type="button" class="corner-button" style="font-size: 90%; font-weight: bold;" onclick="window.location.href = 'main.html';">
+                                <span style="font-family: 'Montserrat', sans-serif;">Continuar</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </form>
+    </div>
+
 
     <!-- Los Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -225,12 +249,11 @@
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
     <!-- Fin de los Scripts -->
 
+    <!-- SCRIPTS -->
+    
+
+
 </body>
-
-
-
 </html>

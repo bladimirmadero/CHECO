@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Logo CHECO-blanco.png">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/button.css">
-    <link rel="stylesheet" href="assets/css/inicio-sesion.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/templatemo.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" media="all" href="../assets/css/button.css">
+    <link rel="stylesheet" href="../assets/css/inicio-sesion.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
 
     <!--Bootstrap (y otros)-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,34 +27,48 @@
 </head>
 
 <style>
-    .nav-link{
-        color: black;
+    h1,h2,h3,h4,h5 {
+        text-align: center;
+    }
+
+    .inputs {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        background: #2E363C;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 2px solid goldenrod;
+        font-size: 18px;
+        color: white;
+    }
+
+    label{
+        font-size: 120% !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn-light{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
         font-size: 120%;
     }
-    .nav-link:hover { /* Al pasar el mouse hará lo siguiente */
-        -webkit-text-fill-color: white; /* Cambia de color */
-        background-color: orange;
-        /* font-size: 1.2em; Cambia el tamaño de fuente */
-      }
-    .navbar-brand{
-        color: black;
-
-    }
-    h1, h3, p{
-        color: white;
+    .btn-light:hover{
+        background-color: goldenrod;
+        
     }
 </style>
 
-<body  style="background-color:#2E363C;">
-      
+<body style="background-color: #2E363C;">
+
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
         <!--justify-content-center-->
         <div class="container-fluid justify-content-around">
 
-            <a class="navbar-brand" style="margin-left:20px" href="index.html"> 
-                <img src="assets/img/Logo CHECO-dorado2.png" width="181.4" height="96.35"/>
+            <a class="navbar-brand" style="margin-left:20px" href="../index.html"> 
+                <img src="../assets/img/Logo CHECO-dorado2.png" width="181.4" height="96.35"/>
             </a>
             
             <!-- Botón para dispositivos pequeños (como móviles) -->
@@ -69,7 +89,7 @@
 
                         <nav class="navx"><!--INICIO-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="main.html">
+                                <a style="text-decoration: none;" href="../main.html">
                                     <li class="lix" style="user-select: none;">
                                         Inicio
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -81,7 +101,7 @@
 
                         <nav class="navx"><!--Personalizar-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="php/personalizar.php">
+                                <a style="text-decoration: none;" href="personalizar.php">
                                     <li class="lix" style="user-select: none;">
                                         Personalizar
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -93,7 +113,7 @@
 
                         <nav class="navx"><!--Tienda-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="tienda.html">
+                                <a style="text-decoration: none;" href="../tienda.html">
                                     <li class="lix" style="user-select: none;">
                                         Tienda
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -122,7 +142,7 @@
 
                         <nav class="navx"><!--Nosotros-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="about.html">
+                                <a style="text-decoration: none;" href="../about.html">
                                 <li class="lix" style="user-select: none;">
                                     Nosotros
                                     <span class="spanx"></span><span class="spanx"></span>
@@ -134,13 +154,12 @@
 
                         <nav class="navx"><!--Sesión-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="sesion.html">
-                                    
+                                <a style="text-decoration: none;" href="../sesion.html">
                                     <li class="lix" style="user-select: none;">
                                         Sesión
                                         <span class="spanx"></span><span class="spanx"></span>
                                         <span class="spanx"></span><span class="spanx"></span>
-                                        <img src="assets/img/usuario 2.png" style="position: absolute; right: 8px;" width="40" height="40">
+                                        <img src="../assets/img/usuario 2.png" style="position: absolute; right: 8px;" width="40" height="40">
                                     </li>
                                 </a>
                             </ul>
@@ -157,80 +176,85 @@
         </div>
     </nav>
 
-    <!-- CONTENIDO DE LA PÁGINA -->
+                    <!-- CONTENIDO DE LA PÁGINA -->
 
+    <!-- CREAR CUENTA -->
     <div class="container py-5">
-
-        <div class="container">
-            <h1>Misión</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                Nuestra <b>misión</b> es proporcionar a los entusiastas del todo terreno
-                una plataforma especializada donde puedan acceder a refacciones de alto rendimiento
-                para mejorar y personalizar sus vehículos. Nos comprometemos a ofrecer una amplia
-                gama de opciones, información detallada y un servicio excepcional para que puedas
-                llevar tu experiencia off-road al siguiente nivel de emoción y rendimiento
-
-            </p>
-        </div>
-
-        <div class="container">
-            <h1>Visión</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                Nuestra <b>visión</b> es convertirnos en el destino
-                de referencia para todos los amantes del off-road en
-                busca de refacciones de alto rendimiento. Queremos ser
-                reconocidos como líderes en la industria, brindando una 
-                experiencia de compra incomparable y apoyando a nuestra
-                comunidad con conocimientos especializados y soluciones personalizadas.
-                Aspiramos a ser el motor que impulsa el espíritu aventurero de nuestros
-                clientes y contribuye al crecimiento constante de la comunidad off-road
-                en todo el mundo.
-
-            </p>
-        </div>
-        <br><br>
-        <div class="container">
-            <h1 class="text-center">Contacto</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Correo:</b> contacto@checo.com
-            </p>
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Telefono:</b> (646) 111 22 33
-            </p>
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Dirección:</b> Av Cuatemoc y calle 42
-            </p>
-            
-            <!--<h3 class="text-center">Genera una cita</h3>
-            <form class="d-flex" role="search" style="width: 30%;">
-                <input class="form-control me-2" type="search" placeholder="Correo" aria-label="Buscar">
-                <input class="form-control me-2" type="search" placeholder="Asunto" aria-label="Buscar">
-                <button class="btn btn-outline-warning" type="submit">Enviar</button>
-            </form>-->
-        </div>
-        
-
     
-    
+        <section id="home" data-stellar-background-ratio="0.5">
+            <form class="form-register bg-dark">
+                <div class="container">
+
+                    <?php
+                        
+                        $password1 = $_POST['password'];
+                        $password2 = $_POST['ps'];
+                    
+                        //Ambas contraseñas deben ser iguales
+                        if($password1 === $password2){
+                            
+                            //Consultsar si existe otro usuario con este nombre
+                            $conexion = mysqli_connect("localhost", "root", "", "checo") or
+                                die("Problemas con la conexión");
+
+                            $consultas = mysqli_query($conexion, "select nameUser
+                                                    from usuarios where nameUser='$_REQUEST[usuario]'") or
+                                die("Problemas en el select:" . mysqli_error($conexion));
+
+                            if ($reg = mysqli_fetch_array($consultas)) {//Si llega aquí, es porqeu ya existe el nombre de usuario
+
+                                echo"<h2>Lo sentimos, el usuario ". $reg['nameUser'] ." ya existe</h2>";
+
+                            } else {
+                                //Si llega aquí, es bueno, porque no encontró otro usuario igual
+                                $nombre = $_POST['nombre'];
+                                $email = $_POST['email'];
+                                $usuario = $_POST['usuario'];
+                                $password = $_POST['password'];
+
+                                $conexion = mysqli_connect("localhost", "root", "", "checo") or die("Problemas con la conexión");
+                                
+                                mysqli_query($conexion, "insert into usuarios(name, email, nameUser, password) values 
+                                                    ('$nombre','$email','$usuario','$password')")
+                                or die("Problemas en el select" . mysqli_error($conexion));
+
+                                mysqli_close($conexion);
+
+                                echo "<h2>Ta has registrado correctamente</h2>";
+
+                            }
+                            mysqli_close($conexion);
+
+                        } else {
+                            // Si las contraseñas no coinciden, muestra un mensaje de error
+                            echo "<h2>Las contraseñas no coinciden</h2>";
+                        }
+                        
+                    ?>
+                    
+                    <br>
+                </div>
+            </form>
+        </section>
+    </div>
 
     <!-- Los Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/templatemo.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/jquery.js"></script>
     <!-- Fin de los Scripts -->
 
+    <!-- SCRIPTS -->
+    <script>
+        function redireccionar() {
+            window.location.href = "../main.html";
+        }
+    </script>
 </body>
-
-
 
 </html>

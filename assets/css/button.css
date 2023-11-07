@@ -1,0 +1,140 @@
+/*html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}*/
+
+.corner-button {
+  /*font-family: 'Lato', sans-serif;*/
+  letter-spacing: .02rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0.5rem solid currentColor;
+  padding: 1.5rem 2rem;
+  font-size: 2.2rem;
+  color: antiquewhite;
+  position: relative;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.corner-button:hover {
+  color: goldenrod;
+}
+.corner-button:hover::before {
+  width: 0;
+}
+.corner-button:hover::after {
+  height: 0;
+}
+.corner-button:active {
+  border-width: 0.25rem;
+}
+.corner-button span {
+  position: relative;
+  z-index: 2;
+}
+.corner-button::before, .corner-button::after {
+  content: '';
+  position: absolute;
+  background: #212429;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.corner-button::before {
+  width: calc(100% - 3rem);
+  height: calc(101% + 1rem);
+  top: -0.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.corner-button::after {
+  height: calc(100% - 3rem);
+  width: calc(101% + 1rem);
+  left: -0.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/*SEGUNDO BOTÓN ANIMADO*/
+
+
+.navx .ulx {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navx .ulx .lix {
+  --c: goldenrod;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.navx .ulx .lix .spanx {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.navx .ulx .lix:hover {
+  color: black;
+}
+
+.navx .ulx .lix:hover .spanx {
+  transform: translateY(0) scale(2);
+}
+
+.navx .ulx .lix .spanx:nth-child(1) {
+  --n: 1;
+}
+
+.navx .ulx .lix .spanx:nth-child(2) {
+  --n: 2;
+}
+
+.navx .ulx .lix .spanx:nth-child(3) {
+  --n: 3;
+}
+
+.navx .ulx .lix .spanx:nth-child(4) {
+  --n: 4;
+}

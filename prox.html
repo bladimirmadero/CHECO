@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo CHECO-blanco.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/inicio-sesion.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!--Bootstrap (y otros)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <title>CHECO</title>
+</head>
+
+<style>
+    h1,h2,h3,h4,p{
+        color: aliceblue;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .nav-link{
+        font-size: 120%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .nav-link:hover { /* Al pasar el mouse hará lo siguiente */
+        background-color: goldenrod;
+        /* font-size: 1.2em; Cambia el tamaño de fuente */
+        font-family: 'Montserrat', sans-serif;
+      }
+    .navbar-brand{
+        color: rgb(207, 42, 42);
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background: none repeat scroll 0 0 #000000;
+      }
+    
+      .spinner {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        position: relative;
+      }
+    
+      .spinner:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 45px;
+        height: 45px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 1px solid #575757;
+        border-top-color: #ffffff;
+        animation: spinner .9s linear infinite;
+      }
+
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+    
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+
+</style>
+
+<body style="background-color: #1e2123;">
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+             <span class="spinner-rotate"></span>
+        </div>
+   </section>
+
+   <!-- Barra de navegación -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+    <!--justify-content-center-->
+    <div class="container-fluid justify-content-around">
+
+        <a class="navbar-brand" style="margin-left:20px" href="index.html"> 
+            <img src="assets/img/Logo CHECO-dorado2.png" width="181.4" height="96.35"/>
+        </a>
+        
+        <!-- Botón para dispositivos pequeños (como móviles) -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav"
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbarNav">
+            <div class="flex-fill">
+
+                <ul class="nav navbar-nav d-flex justify-content-center">
+
+                    <nav class="navx"><!--INICIO-->
+                        <ul class="ulx">
+                            <a style="text-decoration: none;" href="main.html">
+                                <li class="lix" style="user-select: none;">
+                                    Inicio
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
+
+                    <nav class="navx"><!--Personalizar-->
+                        <ul class="ulx">
+                            <a style="text-decoration: none;" href="php/personalizar.php">
+                                <li class="lix" style="user-select: none;">
+                                    Personalizar
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
+
+                    <nav class="navx"><!--Tienda-->
+                        <ul class="ulx">
+                            <a style="text-decoration: none;" href="tienda.html">
+                                <li class="lix" style="user-select: none;">
+                                    Tienda
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
+
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: aliceblue;" href="main.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: aliceblue;" href="personalizar_auto.html">Personalizar Auto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Consultar refacciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Aprende conceptos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Comprar autos</a>
+                    </li>-->
+
+                    <nav class="navx"><!--Nosotros-->
+                        <ul class="ulx">
+                            <a style="text-decoration: none;" href="about.html">
+                            <li class="lix" style="user-select: none;">
+                                Nosotros
+                                <span class="spanx"></span><span class="spanx"></span>
+                                <span class="spanx"></span><span class="spanx"></span>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <nav class="navx"><!--Sesión-->
+                        <ul class="ulx">
+                            <a style="text-decoration: none;" href="sesion.html">
+                                <li class="lix" style="user-select: none;">
+                                    Sesión
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                    <img src="assets/img/usuario 2.png" style="position: absolute; right: 8px;" width="40" height="40">
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html"> Sobre Nosotros </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: aliceblue;" href="about.html"> Contacto </a>
+                        </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+   
+   <div class="container text-center py-4">
+    <h1 style="color: antiquewhite; font-family: 'Montserrat', sans-serif;">Próximamente</h1>
+    <br><br>
+    <img src="assets/img/CHECO sport.png">
+   </div>
+
+    <!-- Los Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <!-- Fin de los Scripts -->
+
+    <!-- SCRIPTS -->
+    
+
+
+</body>
+
+</html>

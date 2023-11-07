@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo CHECO-blanco.png">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
@@ -21,26 +22,73 @@
 </head>
 
 <style>
+    h1,h2,h3,h4,h5,p{
+        color: aliceblue;
+        font-family: 'Montserrat', sans-serif;
+    }
+
     .nav-link{
-        color: black;
         font-size: 120%;
+        font-family: 'Montserrat', sans-serif;
     }
     .nav-link:hover { /* Al pasar el mouse hará lo siguiente */
-        -webkit-text-fill-color: white; /* Cambia de color */
-        background-color: orange;
+        background-color: goldenrod;
         /* font-size: 1.2em; Cambia el tamaño de fuente */
+        font-family: 'Montserrat', sans-serif;
       }
     .navbar-brand{
-        color: black;
+        color: rgb(207, 42, 42);
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background: none repeat scroll 0 0 #000000;
+      }
+    
+      .spinner {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        position: relative;
+      }
+    
+      .spinner:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 45px;
+        height: 45px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 1px solid #575757;
+        border-top-color: #ffffff;
+        animation: spinner .9s linear infinite;
+      }
 
-    }
-    h1, h3, p{
-        color: white;
-    }
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+    
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+
 </style>
 
-<body  style="background-color:#2E363C;">
-      
+<body style="background-color: #2E363C;">
+
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
@@ -135,7 +183,6 @@
                         <nav class="navx"><!--Sesión-->
                             <ul class="ulx">
                                 <a style="text-decoration: none;" href="sesion.html">
-                                    
                                     <li class="lix" style="user-select: none;">
                                         Sesión
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -157,64 +204,116 @@
         </div>
     </nav>
 
-    <!-- CONTENIDO DE LA PÁGINA -->
+    <!------- CONTENIDO DE LA PÁGINA ------->
 
     <div class="container py-5">
-
-        <div class="container">
-            <h1>Misión</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                Nuestra <b>misión</b> es proporcionar a los entusiastas del todo terreno
-                una plataforma especializada donde puedan acceder a refacciones de alto rendimiento
-                para mejorar y personalizar sus vehículos. Nos comprometemos a ofrecer una amplia
-                gama de opciones, información detallada y un servicio excepcional para que puedas
-                llevar tu experiencia off-road al siguiente nivel de emoción y rendimiento
-
-            </p>
-        </div>
-
-        <div class="container">
-            <h1>Visión</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                Nuestra <b>visión</b> es convertirnos en el destino
-                de referencia para todos los amantes del off-road en
-                busca de refacciones de alto rendimiento. Queremos ser
-                reconocidos como líderes en la industria, brindando una 
-                experiencia de compra incomparable y apoyando a nuestra
-                comunidad con conocimientos especializados y soluciones personalizadas.
-                Aspiramos a ser el motor que impulsa el espíritu aventurero de nuestros
-                clientes y contribuye al crecimiento constante de la comunidad off-road
-                en todo el mundo.
-
-            </p>
-        </div>
-        <br><br>
-        <div class="container">
-            <h1 class="text-center">Contacto</h1>
-
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Correo:</b> contacto@checo.com
-            </p>
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Telefono:</b> (646) 111 22 33
-            </p>
-            <p class="display-1 py-1" style="font-size: 140%">
-                <b>Dirección:</b> Av Cuatemoc y calle 42
-            </p>
-            
-            <!--<h3 class="text-center">Genera una cita</h3>
-            <form class="d-flex" role="search" style="width: 30%;">
-                <input class="form-control me-2" type="search" placeholder="Correo" aria-label="Buscar">
-                <input class="form-control me-2" type="search" placeholder="Asunto" aria-label="Buscar">
-                <button class="btn btn-outline-warning" type="submit">Enviar</button>
-            </form>-->
-        </div>
         
+        <h1 class="text-center">Productos CHECO Off-Road</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
 
-    
-    
+            <!--Sudadera mujer-->
+            <div class="col">
+                <div class="card shadow bg-dark">
+                    <a target="_blank" href="assets/img/productos/sudadera_mujer.jpeg">
+                        <img src="assets/img/productos/sudadera_mujer.jpeg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Sudadera CHECO para mujer (Tela delgada)</h5>
+                        <p class="card-text" style="font-size: x-large; color: rgb(72, 255, 72);"><b>$200 MXN</b></p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="button" class="corner-button" style="font-size: 90%; font-weight: bold;" onclick="">
+                            <span style="font-family: 'Montserrat', sans-serif;">COMPRAR</span>
+                        </button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <!--Sudadera hombre-->
+            <div class="col">
+                <div class="card shadow bg-dark">
+                    <a target="_blank" href="assets/img/productos/sudadera_hombre.jpeg">
+                        <img src="assets/img/productos/sudadera_hombre.jpeg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Sudadera CHECO para hombre (Tela gruesa)</h5>
+                        <p class="card-text" style="font-size: x-large; color: rgb(72, 255, 72);"><b>$350 MXN</b></p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="button" class="corner-button" style="font-size: 90%; font-weight: bold;" onclick="">
+                            <span style="font-family: 'Montserrat', sans-serif;">COMPRAR</span>
+                        </button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            
+            <!--Gorra unisex-->
+            <div class="col">
+                <div class="card shadow bg-dark">
+                    <a target="_blank" href="assets/img/productos/gorra.jpeg">
+                        <img src="assets/img/productos/gorra.jpeg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Gorra CHECO unisex y unitalla estilo aesthetic</h5>
+                        <p class="card-text" style="font-size: x-large; color: rgb(72, 255, 72);"><b>$250 MXN</b></p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="button" class="corner-button" style="font-size: 90%; font-weight: bold;" onclick="">
+                            <span style="font-family: 'Montserrat', sans-serif;">COMPRAR</span>
+                        </button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <!--Termo-->
+            <div class="col">
+                <div class="card shadow bg-dark">
+                    <a target="_blank" href="assets/img/productos/termo.jpeg">
+                        <img src="assets/img/productos/termo.jpeg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Termo CHECO de alta durabilidad y acero inoxidable</h5>
+                        <p class="card-text" style="font-size: x-large; color: rgb(72, 255, 72);"><b>$150 MXN</b></p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="button" class="corner-button" style="font-size: 90%; font-weight: bold;" onclick="">
+                            <span style="font-family: 'Montserrat', sans-serif;">COMPRAR</span>
+                        </button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <!--Camiseta-->
+            <div class="col">
+                <div class="card shadow bg-dark">
+                    <a target="_blank" href="assets/img/productos/camiseta.jpeg">
+                        <img src="assets/img/productos/camiseta.jpeg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Termo CHECO en blanco, tela delgada de algodón</h5>
+                        <p class="card-text" style="font-size: x-large; color: rgb(72, 255, 72);"><b>$120 MXN</b></p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="button" class="corner-button" style="font-size: 90%; font-weight: bold;" onclick="">
+                            <span style="font-family: 'Montserrat', sans-serif;">COMPRAR</span>
+                        </button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
     <!-- Los Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -225,12 +324,12 @@
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
     <!-- Fin de los Scripts -->
 
+    <!-- SCRIPTS -->
+    
+
+
 </body>
-
-
 
 </html>
