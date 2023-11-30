@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/inicio-sesion.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!--Bootstrap (y otros)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <title>CHECO</title>
+</head>
+
+<style>
+    .nav-link{
+        color: black;
+        font-size: 120%;
+    }
+    .nav-link:hover { /* Al pasar el mouse hará lo siguiente */
+        -webkit-text-fill-color: white; /* Cambia de color */
+        background-color: orange;
+        /* font-size: 1.2em; Cambia el tamaño de fuente */
+      }
+    .navbar-brand{
+        color: black;
+
+    }
+    h1, h3, p{
+        color: white;
+    }
+</style>
+
+<body  style="background-color:#2E363C;">
+      
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+        <!--justify-content-center-->
+        <div class="container-fluid justify-content-around">
+
+            <a class="navbar-brand" style="margin-left:20px" href="index.html"> 
+                <img src="assets/img/Logo CHECO-dorado2.png" width="181.4" height="96.35"/>
+            </a>
+            
+            <!-- Botón para dispositivos pequeños (como móviles) -->
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbarNav">
+                <div class="flex-fill">
+
+                    <ul class="nav navbar-nav d-flex justify-content-center">
+
+                        <nav class="navx"><!--INICIO-->
+                            <ul class="ulx">
+                                <a style="text-decoration: none;" href="main_plus.html">
+                                    <li class="lix" style="user-select: none;">
+                                        Inicio
+                                        <span class="spanx"></span><span class="spanx"></span>
+                                        <span class="spanx"></span><span class="spanx"></span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </nav>
+
+                        <nav class="navx"><!--Personalizar-->
+                            <ul class="ulx">
+                                <a id="mostrarMensaje" style="text-decoration: none;" href="#">
+                                    <li class="lix" style="user-select: none;">
+                                        Personalizar
+                                        <span class="spanx"></span><span class="spanx"></span>
+                                        <span class="spanx"></span><span class="spanx"></span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </nav>
+
+                        <nav class="navx"><!--Tienda-->
+                            <ul class="ulx">
+                                <a id="mostrarMensaje" style="text-decoration: none;" href="#">
+                                    <li class="lix" style="user-select: none;">
+                                        Tienda
+                                        <span class="spanx"></span><span class="spanx"></span>
+                                        <span class="spanx"></span><span class="spanx"></span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </nav>
+
+
+                        <nav class="navx"><!--Nosotros-->
+                            <ul class="ulx">
+                                <a style="text-decoration: none;" href="#">
+                                <li class="lix" style="user-select: none;">
+                                    Nosotros
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                    <span class="spanx"></span><span class="spanx"></span>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                        <nav class="navx"><!--Sesión-->
+                            <ul class="ulx">
+                                <a style="text-decoration: none;" href="sesion.html">
+                                    
+                                    <li class="lix" style="user-select: none;">
+                                        Sesión
+                                        <span class="spanx"></span><span class="spanx"></span>
+                                        <span class="spanx"></span><span class="spanx"></span>
+                                        <img src="assets/img/usuario 2.png" style="position: absolute; right: 8px;" width="40" height="40">
+                                    </li>
+                                </a>
+                            </ul>
+                        </nav>
+                            <!--<li class="nav-item">
+                                <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html"> Sobre Nosotros </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: aliceblue;" href="about.html"> Contacto </a>
+                            </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO DE LA PÁGINA -->
+<CENTER>
+    <div class="container py-5">
+
+        <div class="container">
+            <h1>Misión</h1>
+
+            <p class="display-1 py-1" style="font-size: 140%">
+                Nuestra <b>misión</b> es proporcionar a los entusiastas del todo terreno
+                una plataforma especializada donde puedan acceder a refacciones de alto rendimiento
+                para mejorar y personalizar sus vehículos. Nos comprometemos a ofrecer una amplia
+                gama de opciones, información detallada y un servicio excepcional para que puedas
+                llevar tu experiencia off-road al siguiente nivel de emoción y rendimiento
+
+            </p>
+        </div>
+
+        <div class="container">
+            <h1>Visión</h1>
+
+            <p class="display-1 py-1" style="font-size: 140%">
+                Nuestra <b>visión</b> es convertirnos en el destino
+                de referencia para todos los amantes del off-road en
+                busca de refacciones de alto rendimiento. Queremos ser
+                reconocidos como líderes en la industria, brindando una 
+                experiencia de compra incomparable y apoyando a nuestra
+                comunidad con conocimientos especializados y soluciones personalizadas.
+                Aspiramos a ser el motor que impulsa el espíritu aventurero de nuestros
+                clientes y contribuye al crecimiento constante de la comunidad off-road
+                en todo el mundo.
+
+            </p>
+        </div>
+        <br><br>
+        <div class="container">
+        <h1 class="text-center">Contacto</h1>
+
+            <p class="display-1 py-1" style="font-size: 140%">
+                <b>Correo :</b> contacto@checo.com
+            </p>
+            <p class="display-1 py-1" style="font-size: 140%">
+                <b>Telefono :</b> (646) 111 22 33
+            </p>
+            <p class="display-1 py-1" style="font-size: 140%">
+                <b>Nuestra Ubicación :</b>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847.4991972457988!2d-116.59903614191344!3d31.825080465476077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d88e053696c1a3%3A0xa7dddf12b7f5941e!2sUniversidad%20Aut%C3%B3noma%20de%20Baja%20California%20-%20UABC%20Campus%20Valle%20Dorado!5e0!3m2!1ses-419!2smx!4v1700273337194!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </CENTER>
+            </p>
+            
+            <!--<h3 class="text-center">Genera una cita</h3>
+            <form class="d-flex" role="search" style="width: 30%;">
+                <input class="form-control me-2" type="search" placeholder="Correo" aria-label="Buscar">
+                <input class="form-control me-2" type="search" placeholder="Asunto" aria-label="Buscar">
+                <button class="btn btn-outline-warning" type="submit">Enviar</button>
+            </form>-->
+        </div>
+        
+
+    
+    
+
+    <!-- Los Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <!-- Fin de los Scripts -->
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,22 @@
+Para pushear el proyecto, se usa este comando en específico:
+
+$ git push origin main -f
+
+
+Cosas por hacer:
+
+-CRUD para carros:
+• Marca
+• Modelo
+• Año
+• Tipo motor
+• Nombre motor
+• Nombre transmisión
+
+-CRUD para refacciones
+
+-CRUD para tienda (agregar productos)
+
+-CRUD
+
+-Personalizar

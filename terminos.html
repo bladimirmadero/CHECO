@@ -61,6 +61,16 @@
     .btn-light:hover{
         background-color: goldenrod;
     }
+    ::selection {
+        background-color: yellow; /* Cambia 'yellow' al color que resaltara el texto */
+        color: rgb(0, 0, 0); /* Cambia 'black' al color del texto cuando está seleccionado */
+    }
+    #textarea {
+    font-family: arial, verdana, ms sans serif;
+    font-size: 19pt;
+    color: rgb(242, 193, 71);
+    letter-spacing: 1px;
+    }
 </style>
 
 <body style="background-color: #2E363C;">
@@ -93,7 +103,7 @@
 
                         <nav class="navx"><!--INICIO-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="main.html">
+                                <a style="text-decoration: none;" href="">
                                     <li class="lix" style="user-select: none;">
                                         Inicio
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -105,7 +115,7 @@
 
                         <nav class="navx"><!--Personalizar-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="php/personalizar.php">
+                                <a style="text-decoration: none;" href="">
                                     <li class="lix" style="user-select: none;">
                                         Personalizar
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -117,7 +127,7 @@
 
                         <nav class="navx"><!--Tienda-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="tienda.html">
+                                <a style="text-decoration: none;" href="">
                                     <li class="lix" style="user-select: none;">
                                         Tienda
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -127,26 +137,9 @@
                             </ul>
                         </nav>
 
-                        <!--
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: aliceblue;" href="main.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: aliceblue;" href="personalizar_auto.html">Personalizar Auto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Consultar refacciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Aprende conceptos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html">Comprar autos</a>
-                        </li>-->
-
                         <nav class="navx"><!--Nosotros-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="about.html">
+                                <a style="text-decoration: none;" href="">
                                 <li class="lix" style="user-select: none;">
                                     Nosotros
                                     <span class="spanx"></span><span class="spanx"></span>
@@ -158,7 +151,7 @@
 
                         <nav class="navx"><!--Sesión-->
                             <ul class="ulx">
-                                <a style="text-decoration: none;" href="sesion.html">
+                                <a style="text-decoration: none;" href="">
                                     <li class="lix" style="user-select: none;">
                                         Sesión
                                         <span class="spanx"></span><span class="spanx"></span>
@@ -168,12 +161,6 @@
                                 </a>
                             </ul>
                         </nav>
-                            <!--<li class="nav-item">
-                                <a class="nav-link" style="color: aliceblue;" href="personalizar_autos.html"> Sobre Nosotros </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: aliceblue;" href="about.html"> Contacto </a>
-                            </li>-->
                     </ul>
                 </div>
             </div>
@@ -183,56 +170,79 @@
 
                     <!-- CONTENIDO DE LA PÁGINA -->
 
-    <!-- CREAR CUENTA -->
+    <!-- Términos y condiciones -->
     <div class="container py-5">
         
-            <form class="form-register bg-dark">
+            <form class="bg-dark">
                 <div class="container">
-                    <h1>Términos y condiciones</h1>
+                    <h1 style="color: rgb(255, 217, 0);">Términos y condiciones.</h1>
                     <form>
-                        <textarea id="w3review" name="w3review" rows="20" cols="70" disabled>
-CHECO:
+                        <div style="display: flex; flex-direction: column;">
+<textarea id="textarea" name="w3review" rows="20" cols="70" disabled style="background-color: #353d43;"; oncopy="return false;">
 CHECO es un sitio web que ofrece servicios vinculados principalmente a la personalización y comparación del rendimiento del vehículo off-road.
 
-Términos y Condiciones:
+            TÉRMINOS Y CONDICIONES:
+
 Las Personas Usuarias aceptan estos Términos y Condiciones desde el momento en que se registran en el Sitio y/o lo usan.
 
-Responsabilidad del usuario:
+            RESPONSABILIDADES DEL USUARIO:
+
 • No nos hacemos responsables por la falla mecánica del vehículo, este sistema web es un simulador informativo y recreativo, puede ser susceptible a fallos de cálculos y estadísticas. Consulte a un mecánico profesional.
 • Cualquier fallo o defecto por las refacciones en el vehículo físico, CHECO no se hace responsable, cualquier inconveniente con la refacción pasa a ser responsabilidad del fabricante de las piezas.
 • CHECO no se hace responsable por incompatibilidad de piezas debido a diferencias en modelos y constante innovación en la fabricación de las refacciones.
 • El usuario se hace responsable por los cambios que desee hacer a su vehículo.
 • No se hacen devoluciones en el sistema de donaciones.
 
-Sanciones:
+            SANCIONES:
+
 En caso que la Persona Usuaria incumpliera una ley o los Términos y Condiciones, podremos advertir, suspender, restringir o inhabilitar temporal o definitivamente su cuenta, sin perjuicio de otras sanciones que se establezcan en las reglas de uso particulares de los servicios de CHECO.
 
-Registro y cuenta:
+            REGISTRO Y CUENTA:
+
 • Las cuentas son personales y se accede a ellas con una clave confidencial.
 • Quien desee guardar su registro de proyecto, deberá completar el formulario de registro con los datos que le sean requeridos; al completarlo, se compromete a hacerlo de manera  exacta, precisa y verdadera y a mantener sus datos siempre actualizados. La Persona Usuaria será la única responsable de la certeza de sus datos de registro.
 
-Seguridad:
+            SEGURIDAD:
+
 • La organización no se hace responsable por accidentes que presente el usuario en su vehículo.
 • La organización no se hace responsable de la cuenta del usuario en caso de ser víctima de phishing, fishing, o cualquier otro ciberdelito.
 
-Jurisdicción y Ley Aplicable:
+            JURISDICCIÓN Y LEY APLICABLE:
+
 Estos Términos y Condiciones se rigen por la ley local. Toda controversia derivada de su aplicación, interpretación, ejecución o validez será resuelta por los tribunales nacionales ordinarios competentes, con asiento en la capital, salvo disposición específica de normas de orden público, como por ejemplo, legislación relativa al Consumidor. Para todos los efectos relacionados con estos Términos y Condiciones y con el uso del sitio, CHECO, establece como domicilio Blvd. Zertuche y Blvd. de los Lagos s/n. Fraccionamiento Valle Dorado C.P. 22890. Ensenada, Baja California, México.
 
-Propiedad intelectual:
+            PROPIEDAD INTELECTUAL:
+
 • No se tolerará la duplicación, falsificación o inclumplimiento con los derechos reservados a la propiedad intelectual e industrial, es decir, nuestro nombre, logo y código fuente de nuestro sitio. Será resuelto en la Fiscalía General de la República o Unidad Especializada en Investigación de Delitos contra los Derechos de Autor y la Propiedad Industrial.
 • Cualquier información brindada en CHECO, es propiedad de la organización misma y no puede ser duplicada y publicada en otros medios.
 • En caso que una Persona Usuaria o cualquier publicación infrinja la Propiedad Intelectual de CHECO o de terceros, CHECO podrá remover dicha publicación total o parcialmente, sancionar al usuario conforme a lo previsto en estos Términos y Condiciones y ejercer las acciones extrajudiciales y/o judiciales correspondientes.
 </textarea>
+                        </div>
+                        
 
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" name="acepto">
-                            <label for="acepto"> Acepto</label>
+                            <input class="form-check-input" type="checkbox" id="acepto" name="acepto">
+                            <label for="acepto" style="color: white"> Acepto los terminos y condiciones.</label>
                         </div>
 
                         <div style="text-align: center;">
-                            <button type="button" class="corner-button" style="font-size: 90%; font-weight: bold;" onclick="window.location.href = 'main.html';">
+                            <button type="button" class="corner-button" style="font-size: 90%; font-weight: bold;" onclick="validarAcepto()">
                                 <span style="font-family: 'Montserrat', sans-serif;">Continuar</span>
                             </button>
+                                <script>
+                                    function validarAcepto() {
+                                        var checkboxAcepto = document.getElementById("acepto");
+                                
+                                        if (!checkboxAcepto.checked) {
+                                            alert("Por favor, acepta los términos y condiciones antes de continuar.");
+                                            return false;
+                                        }
+                                
+                                        // Si se ha marcado el checkbox, redirige a 'main.html'
+                                        window.location.href = 'main.html';
+                                        return true;
+                                    }
+                                </script>
                         </div>
                     </form>
                 </div>

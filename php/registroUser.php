@@ -185,62 +185,9 @@
 
     <!-- CREAR CUENTA -->
     <div class="container py-5">
-        <!-- Formulario chilo 
-
-        <section>
-            <div class="login-box">
-                <h2>Crear cuenta</h2>
-                <form action="registroUser2.php" method="post">
-
-                    !--Nombre--
-                    <div class="user-box">
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label for="nombre">Nombre</label>
-                    </div>
-
-                    !--Correo--
-                    <div class="user-box">
-                        <input type="email" name="email" id="email" required>
-                        <label for="email">Correo electrónico</label>
-                    </div>
-
-                    !--Usuario--
-                    <div class="user-box">
-                        <input type="text" name="usuario" id="usuario" required>
-                        <label for="usuario">Nombre de usuario</label>
-                    </div>
-
-                    !--Contraseña--
-                    <div class="user-box">
-                        <input type="password" name="password" id="password" required>
-                        <label for="password">Nueva contraseña</label>
-                    </div>
-
-                    !--Contraseña corroborar--
-                    <div class="user-box">
-                        <input type="password" name="ps" id="ps" required>
-                        <label for="ps">Nueva contraseña (repítela)</label>
-                    </div>
-
-                    !--Button--
-                    <div style="text-align: center;">
-                        <button type="submit" name="submit" style="background-color: transparent; border: none;" >
-                                <p>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Iniciar sesión
-                                </p>
-                        </button>
-                    </div>
-                </form>
-
-            </div>
-        </section> -->
         
 
-        <!-- FORMULARIO VIEJO -->
+        <!-- FORMULARIO -->
         
         <section id="home" data-stellar-background-ratio="0.5">
             <form class="form-register bg-dark" action="registroUser2.php" method="post" autocomplete="off">

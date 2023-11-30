@@ -1,12 +1,26 @@
 <?php
-    // Iniciar sesión
     session_start();
+    $nombreUsuario = isset($_SESSION['nameUser']) ? $_SESSION['nameUser'] : "Invitado";
+?>
 
+<!------------------ SESIÓN INICIADA ----------------->
+
+    <div id="header" style="text-align: right;" class="container-fluid">
+        <span style="color: white;">Bienvenido, <?php echo $nombreUsuario; ?></span>
+
+        <?php if (isset($_SESSION['nameUser'])) : ?>
+            <a style="color: goldenrod;" href="logout.php">Cerrar Sesión</a>
+        <?php else : ?>
+            <a style="color: goldenrod;" href="inicioSesion.php">Iniciar Sesión</a>
+        <?php endif; ?>
+    </div>
+
+<?php
+    // Iniciar sesión
+  
     // Conexión a la base de datos
     $db = mysqli_connect("localhost", "root", "", "checo");
-
     $errors = [];
-
     // Si se ha enviado el formulario
     if (isset($_POST['login-button'])) {
         $username = mysqli_real_escape_string($db, $_POST['usuario']);
@@ -36,9 +50,6 @@
     }
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -55,6 +66,7 @@
     <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" media="all" href="../assets/css/button.css">
     <link rel="stylesheet" href="../assets/css/inicio-sesion.css">
+    <link rel="stylesheet" href="../assets/css/btn-flotante.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
@@ -115,7 +127,7 @@
             <a class="navbar-brand" style="margin-left:20px" href="../index.html"> 
                 <img src="../assets/img/Logo CHECO-dorado2.png" width="181.4" height="96.35"/>
             </a>
-            
+
             <!-- Botón para dispositivos pequeños (como móviles) -->
             <button class="navbar-toggler" 
                     type="button" 
@@ -266,6 +278,7 @@
         </section>
     </div>
 
+    
 
 
     <!-- Los Scripts -->
@@ -281,7 +294,8 @@
 
     <!-- SCRIPTS -->
     
-
+    <a style="text-decoration: none;" href="../admin/inicioSesion.php" class="btn-flotante">Iniciar como administrador</a>
 
 </body>
+
 </html>

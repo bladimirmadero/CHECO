@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $nombreUsuario = isset($_SESSION['nameUser']) ? $_SESSION['nameUser'] : "Invitado";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,6 +29,53 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
     <title>CHECO</title>
 </head>
+
+<!------------------ SESIÓN INICIADA ----------------->
+
+<div id="header" style="text-align: right;" class="container-fluid">
+        <span style="color: white;">Bienvenido, <?php echo $nombreUsuario; ?></span>
+
+        <?php if (isset($_SESSION['nameUser'])) : ?>
+            <a style="color: goldenrod;" href="logout.php">Cerrar Sesión</a>
+        <?php else : ?>
+            <a style="color: goldenrod;" href="inicioSesion.php">Iniciar Sesión</a>
+        <?php endif; ?>
+    </div>
+
+<?php
+    // Iniciar sesión
+  
+    // Conexión a la base de datos
+    $db = mysqli_connect("localhost", "root", "", "checo");
+    $errors = [];
+    // Si se ha enviado el formulario
+    if (isset($_POST['login-button'])) {
+        $username = mysqli_real_escape_string($db, $_POST['usuario']);
+        $password = mysqli_real_escape_string($db, $_POST['password']);
+
+        // Comprobar si el nombre de usuario es válido
+        $query = "SELECT * FROM usuarios WHERE nameUser ='$username'";
+        $results = mysqli_query($db, $query);
+
+        if (mysqli_num_rows($results) == 1) {
+            // Nombre de usuario válido, verificar contraseña
+            $row = mysqli_fetch_assoc($results);
+            echo "<p>Contraseña de la base de datos: ". $row['password'] ."</p>";
+            echo "<p>Contraseña local: $password" . "</p>";
+            if ($password === $row['password']) {
+                // Inicio de sesión válido
+                $_SESSION['nameUser'] = $username;
+                header('location: inicioSesion2.php');
+            } else {
+                // Contraseña inválida
+                $errors[] = "contraseña inválidos";
+            }
+        } else {
+            // Nombre de usuario inválido
+            $errors[] = "Nombre de usuario inválido";
+        }
+    }
+?>
 
 <style>
     h1,h2,h3,h4,h5 {
@@ -201,8 +253,6 @@
             </form>
         </section>
     </div>
-
-
 
     <!-- Los Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
